@@ -94,60 +94,6 @@ if ((isset($_POST['name']) && !empty($_POST['name']))
         echo 'Email sending failed.';
     }
 
-    $from1 = "gopinathkrm@gmail.com";
-    $to1 = "gopinathkrm@gmail.com";
-    $subject1 = $_POST['subject'];
-    $fromName1 = "Gopinath";
-    $body1 .= '
- <html> 
-    <head> 
-    </head> 
-    <body>
-        <hr>
-          <table border = "1" align="center">
-         <tr>
-            <td>Name</td>
-            <td>' . $name . '</td>
-
-         </tr>
-         <tr>
-            <td>Mobile No</td>
-            <td>' . $phone . '</td>
-         </tr>    
-         <tr>
-             <td>Email</td>
-             <td>' . $email . '</td>
-         </tr>
-          <tr>
-             <td>Subject</td>
-             <td>' . $subject . '</td>
-         </tr>
-          <tr>
-             <td>Message</td>
-             <td>' . $message . '</td>
-         </tr>
-
-      </table>
-    </body> 
-    </html>';
-
-    // Set content-type header for sending HTML email 
-    $headers1 = "MIME-Version: 1.0" . "\r\n";
-    $headers1 .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-    // $headers1 = "From:" . $from1;
-    // $headers1 .= 'From: <'.$from1.'>' . "\r\n"; 
-    $headers1 .= 'From: ' . $fromName1 . '<' . $from1 . '>' . "\r\n";
-
-
-
-    if (mail($to1, $subject1, $body1, $headers1)) {
-        // echo "Message successfully sent admin!";
-    } else {
-        echo ("
-      Message delivery failed...
-    ");
-    }
 }
 
 ?>
