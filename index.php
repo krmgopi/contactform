@@ -66,7 +66,7 @@ if ((isset($_POST['name']) && !empty($_POST['name']))
     $fromName = $name;
 
 
-    $htmlContent .= ' 
+    $htmlContent = ' 
     <html> 
     <head> 
         <title>Welcome</title> 
