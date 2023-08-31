@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Contact Us - Unique Infra Projects is the best land promoters in tamilnadu | Unique Infra Projects.</title>
+    <title>Contact Us - Unique Infra Projects is the best land promoters in tamilnadu | Unique Infra Projects.</title>
     <meta name="description" content="Unique Infra Projects is the best best land promoters in tamilnadu. Unique Infra Projects reaches unlimited values in a short period of time. Unique Infra Projects is one of the leading land promoters in tamilnadu.">
     <meta name="keywords" content="Unique Infra Projects , Land promoters, Building contractor.">
     <meta name="author" content="Unique Infra Projects">
 
-    <!--favicon icon-->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
 
-        
-   
 </head>
 
 <body>
 
     <!--preloader start-->
-        
-   
+
+
     <!--preloader end-->
     <!--main content wrapper start-->
     <div class="main-wrapper bg-blac">
         <!--header section start-->
         <!--header start-->
-        
-        
+
+
         <!--header section end-->
 
-      
+
         <!--page header section start-->
         <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom left">
             <div class="container">
@@ -47,7 +44,7 @@
         <!--contact us promo section start-->
         <section class="contact-promo ptb-30">
             <div class="container">
-                            
+
 
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-6 mt-4 mt-lg-0">
@@ -90,16 +87,15 @@
                             </div>
                         </div>
                     </div>
-                    
-                       
+
+
 
                     <div class="col-lg-5 col-md-6 mt-4 mt-lg-0">
                         <h4 class="py-3">CONTACT US</h4>
-                        <form  id="contact" class="register-form">
+                        <form id="contact" class="register-form">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <label for="firstName" class="mb-1">First name <span
-                                            class="text-danger">*</span></label>
+                                    <label for="firstName" class="mb-1">First name <span class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
                                         <input type="text" name="name" class="form-control" id="firstName" required placeholder="First name" aria-label="First name">
                                     </div>
@@ -137,35 +133,36 @@
         </section>
         <!--contact us promo section end-->
 
-        
-         
+
+
         <!--footer section start-->
-        
-       
+
+
         <!--footer section end-->
     </div>
 
 
     <!--build:js-->
-        <script type="text/javascript">
-      $("#contact").submit(function(e){
-        e.preventDefault();
-        var formdata = $(this);
-        $.ajax({
+    <script type="text/javascript">
+        $("#contact").submit(function(e) {
+            e.preventDefault();
+            var formdata = $(this);
+            $.ajax({
 
-          url:'contact.php',
-          type:'POST',
-          data:formdata.serialize(),
-          cache:false,
-          success: function(reply){
-            alert(reply);
-          }
+                url: 'contact.php',
+                type: 'POST',
+                data: formdata.serialize(),
+                cache: false,
+                success: function(reply) {
+                    alert(reply);
+                }
 
+            });
+            return false;
         });
-        return false;
-      });
     </script>
- 
+
     <!--endbuild-->
 </body>
+
 </html>
