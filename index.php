@@ -15,14 +15,8 @@
 
 <body>
 
-    <!--preloader start-->
-
-
-    <!--preloader end-->
-    <!--main content wrapper start-->
     <div class="main-wrapper bg-blac">
-        <!--header section start-->
-        <!--header start-->
+        
 
 
         <!--header section end-->
@@ -133,12 +127,6 @@
         </section>
         <!--contact us promo section end-->
 
-
-
-        <!--footer section start-->
-
-
-        <!--footer section end-->
     </div>
 
 
